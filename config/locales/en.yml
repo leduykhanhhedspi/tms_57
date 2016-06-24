@@ -54,7 +54,7 @@ en:
     edit_user: "Edit User"  
   relationship:
     following: "Following"
-    follower: "Follower"
+    followers: "Follower"
     follow: "Follow"
     unfollow: "Unfollow"
   subjects:
