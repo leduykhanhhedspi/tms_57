@@ -1,5 +1,19 @@
 <%= provide :title, @course.name %>
 <div class="col-md-4">
+  <h4><%= t "title.trainee" %></h4>
+  <ol class="user_course">
+    <% @user_courses.each do |user_course| %>
+      <% if user_course.user.trainee? %>
+        <li>
+          <div class="col-md-8">
+            <%= link_to user_course.user.name, user_path(user_course.user) %>
+          </div>
+        </li>
+      <% end %>
+    <% end %>
+  </ol>
+</div>
+<div class="col-md-4">
   <h1><%= @course.name %></h1>
   <h4><%= t "courses.description" %> : <%= @course.description %></h4>
 </div>
