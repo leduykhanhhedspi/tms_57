@@ -117,6 +117,7 @@ en:
     start: "start"
     active: "Your Active Course"
     course_finished: "Finished Course"
+    none: "None"
   user:
     profile: "Profile"
     dashboard: "Dashboard"
